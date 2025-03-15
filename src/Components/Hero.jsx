@@ -4,6 +4,7 @@ import { GoDotFill } from "react-icons/go";
 import { LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import hammadm1r from "../assets/hammadm1r.jpeg"
 function Hero(){
     const socialLinks = [
 {
@@ -21,7 +22,7 @@ function Hero(){
     ]
     return (
         <div className="flex flex-wrap justify-between p-2 sm:p-8">
-            <div className = "pl-2 w-full md:w-2/3  order-2 md:order-1">
+            <div className = "pl-2 w-full md:w-2/3  order-2 md:order-1 mt-8 sm:mt-4">
                 <h2 className="text-4xl font-extrabold">Hi, I'm Hammad</h2>
                 <p className="text-md font-thin text-balance mt-4">I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
                 <div>
@@ -36,8 +37,8 @@ function Hero(){
                 }
                 </div>
             </div>
-            <div className="bg-cyan-300 w-full md:w-1/3 order-1 md:order-2">
-                <h1>Hello World</h1>
+            <div className=" w-full md:w-1/3 order-1 md:order-2 ">
+                <img src={hammadm1r} alt="Hammad Meer"  className="rounded-full"/>
             </div>
         </div>
     )
