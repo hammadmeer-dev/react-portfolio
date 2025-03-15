@@ -4,12 +4,8 @@ import { CiDark } from "react-icons/ci";
 import resume from "../assets/hammadm1r.pdf";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
-function Navbar() {
-  const [isDark, setIsDark] = useState(false);
+function Navbar({handleNightMode,nightMode}) {
   const [isMenu, setIsMenu] = useState(false);
-  const handleToggle = (e) => {
-    setIsDark(!isDark);
-  };
   const handleMenu = (e) => {
     setIsMenu(!isMenu);
   };
@@ -20,7 +16,7 @@ function Navbar() {
     { name: "Contact", link: "/contact" },
   ];
   return (
-    <nav>
+    <nav className="bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="flex justify-between p-2 sm:p-8">
         <div className="w-1/2 md:w-1/3">
           <h1 className="text-lg font-bold text-left pl-2 flex items-center">
@@ -43,9 +39,9 @@ function Navbar() {
           </ul>
           <h1
             className=" flex justify-center items-center rounded-full"
-            onClick={handleToggle}
+            onClick={handleNightMode}
           >
-            {isDark ? (
+            {nightMode ? (
               <CiDark className="text-2xl" />
             ) : (
               <CiLight className="text-2xl" />
@@ -57,7 +53,7 @@ function Navbar() {
         </div>
       </div>
       {isMenu ? (
-          <div className="fixed inset-0 w-full md:hidden bg-white ">
+          <div className="fixed inset-0 w-full md:hidden bg-white dark:bg-gray-900 text-black dark:text-white  ">
             <div className=" justify-right items-right text-right">
             <button className="text-right justify-end text-2xl p-8" onClick={handleMenu}>< RxCross1/></button>
             </div>
@@ -73,9 +69,9 @@ function Navbar() {
             </ul>
             <h1
               className=" flex justify-center items-center rounded-full mb-6"
-              onClick={handleToggle}
+              onClick={handleNightMode}
             >
-              {isDark ? (
+              {nightMode ? (
                 <CiDark className="text-2xl " />
               ) : (
                 <CiLight className="text-2xl" />

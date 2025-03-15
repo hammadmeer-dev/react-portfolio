@@ -21,7 +21,7 @@ function Hero(){
 }
     ]
     return (
-        <div className="flex flex-wrap justify-between p-2 sm:p-8">
+        <div className="flex flex-wrap justify-between p-2 sm:p-8 lg:h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
             <div className = "pl-2 w-full md:w-2/3  order-2 md:order-1 mt-8 sm:mt-4">
                 <h2 className="text-4xl font-extrabold">Hi, I'm Hammad</h2>
                 <p className="text-md font-thin text-balance mt-4">I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
@@ -32,7 +32,7 @@ function Hero(){
                 <div className="flex p-5">
                 { 
                 socialLinks.map((item) => 
-                    <p className="text-xl font-bold pr-4">{item.icon}</p>
+                    <p className="text-xl font-bold pr-4 hover:text-sky-600">{item.icon}</p>
                 )   
                 }
                 </div>
