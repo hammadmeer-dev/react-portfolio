@@ -23,7 +23,7 @@ const Aboutme = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           About Me
         </h1>
       </div>
@@ -31,9 +31,11 @@ const Aboutme = () => {
         <div className="pl-2 w-full md:w-1/2  order-2 md:order-2 mt-8 sm:mt-4">
           <h2 className="text-3xl font-extrabold">Curious about me? Here you have it:</h2>
           <p className="text-md font-thin text-balance mt-4">
-          I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.<br/>
-          I began my journey as a web developer in 2015, and since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. Now, in my early thirties, 7 years after starting my web development journey, I'm building cutting-edge web applications using modern technologies such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more. <br/> I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.
-          <br/>When I'm not in full-on developer mode, you can find me hovering around on twitter or on indie hacker, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
+          I'm a passionate, self-proclaimed developer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.<br/>
+         I specialize in building fast, secure, and scalable web applications using MongoDB, Express.js, React.js, and Node.js. My expertise extends to state management with Redux Toolkit, secure authentication using JWT, and seamless payment integration with Stripe.
+          With a continuous learning mindset, I have dedicated significant time to mastering data structures and algorithms, developing real-world projects, and refining my problem-solving skills.I focus on delivering user-centric, efficient, and innovative solutions.
+ <br/> I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development.
+          <br/>When I'm not in full-on developer mode, you can find me hovering around on Instagram or on Linkedin, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
           <br/><br/>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
           </p>
           <div>

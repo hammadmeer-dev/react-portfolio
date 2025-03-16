@@ -47,7 +47,7 @@ function Navbar({handleNightMode,nightMode}) {
               <CiLight className="text-2xl" />
             )}
           </h1>
-          <h1 className="flex justify-center items-center text-md font-semibold rounded-xl bg-black text-white px-2 py-1">
+          <h1 className="flex dark:bg-slate-400 justify-center items-center text-md font-semibold rounded-xl bg-black text-white px-2 py-1">
             <a href={resume}>Downlord CV</a>
           </h1>
         </div>
@@ -77,7 +77,7 @@ function Navbar({handleNightMode,nightMode}) {
                 <CiLight className="text-2xl" />
               )}
             </h1>
-            <h1 className="flex justify-center items-center text-md font-semibold rounded-xl bg-black text-white px-2 py-1">
+            <h1 className="flex justify-center  items-center text-md font-semibold rounded-xl bg-black text-white px-2 py-1">
               <a href={resume}>Downlord CV</a>
             </h1>
           </div>

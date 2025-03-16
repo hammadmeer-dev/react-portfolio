@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           Skills
         </h1>
       </div>
