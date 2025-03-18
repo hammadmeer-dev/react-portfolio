@@ -5,21 +5,8 @@ import { LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import hammadm1r from "../assets/hammadm1r.jpeg"
+import { socialLinks } from "../util/constants";
 function Hero(){
-    const socialLinks = [
-{
-    icon: <LuGithub />,
-    link: "https://github.com",
-},
-{
-    icon: <FaLinkedinIn />,
-    link: "https://www.linkedin.com",
-},
-{
-    icon: <FaInstagram />,
-    link: "https://www.instagram.com",
-}
-    ]
     return (
         <div id="Hero" className="flex flex-wrap justify-between p-2 sm:p-8 lg:h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
             <div className = "pl-2 w-full md:w-2/3  order-2 md:order-1 mt-8 sm:mt-4">

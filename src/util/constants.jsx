@@ -13,7 +13,11 @@ import mongodb from "../assets/mongodb.png";
 import mui from "../assets/mui.png";
 import firebase from "../assets/Firebase.png";
 import mysql from "../assets/mysql.png";
-
+import { IoLocationOutline } from "react-icons/io5";
+import { GoDotFill } from "react-icons/go";
+import { LuFacebook, LuGithub, LuInstagram } from "react-icons/lu";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
 export const Skill_data = [
   {
     skill_name: "Html 5",
@@ -106,3 +110,21 @@ export const Skill_data = [
     height: 70,
   },
 ];
+
+export const socialLinks = [
+    {
+      icon: <LuGithub />,
+      link: "https://github.com/hammadm1r",
+    },{
+      icon: <LuFacebook/>,
+      link:"https://www.facebook.com/hammad.mir.338?mibextid=ZbWKwL"
+    },
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://pk.linkedin.com/in/hammadm1r",
+    },
+    {
+      icon: <FaInstagram />,
+      link: "https://pk.linkedin.com/in/hammadm1r",
+    },
+  ];

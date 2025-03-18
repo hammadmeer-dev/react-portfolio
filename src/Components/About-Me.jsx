@@ -5,21 +5,8 @@ import { LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import hammadm1r from "../assets/hammadm1r.jpeg";
+import { socialLinks } from "../util/constants";
 const Aboutme = () => {
-  const socialLinks = [
-    {
-      icon: <LuGithub />,
-      link: "https://github.com",
-    },
-    {
-      icon: <FaLinkedinIn />,
-      link: "https://www.linkedin.com",
-    },
-    {
-      icon: <FaInstagram />,
-      link: "https://www.instagram.com",
-    },
-  ];
   return (
     <div id="About" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6">
       <div className="flex justify-center content-center">

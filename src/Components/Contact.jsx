@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { GoDotFill } from "react-icons/go";
-import { LuGithub, LuInstagram } from "react-icons/lu";
+import { LuFacebook, LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa";
 import { MdContentCopy } from "react-icons/md";
+import { socialLinks } from "../util/constants";
 
 const Contact = () => {
     const [copiedText, setCopiedText] = useState("");
@@ -16,20 +17,7 @@ const Contact = () => {
       setCopiedText(text);
       setTimeout(() => setCopiedText(""), 2000); // Reset after 2s
     };
-  const socialLinks = [
-    {
-      icon: <LuGithub />,
-      link: "https://github.com",
-    },
-    {
-      icon: <FaLinkedinIn />,
-      link: "https://www.linkedin.com",
-    },
-    {
-      icon: <FaInstagram />,
-      link: "https://www.instagram.com",
-    },
-  ];
+  
   return (
     <div id="Contact" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6 pb-10">
       <div className="flex justify-center content-center">
