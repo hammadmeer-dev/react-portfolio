@@ -21,7 +21,7 @@ const Aboutme = () => {
     },
   ];
   return (
-    <div className="bg-white dark:bg-gray-900 text-black dark:text-white">
+    <div id="About" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6">
       <div className="flex justify-center content-center">
         <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           About Me
@@ -38,16 +38,6 @@ const Aboutme = () => {
           <br/>When I'm not in full-on developer mode, you can find me hovering around on Instagram or on Linkedin, witnessing the journey of early startups or enjoying some free time. You can follow me on Twitter where I share tech-related bites and build in public, or you can follow me on GitHub.
           <br/><br/>One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite 😉
           </p>
-          <div>
-            <p className="flex pt-4  text-md font-thin justify-left items-center">
-              <IoLocationOutline className=" font-bold flex justify-center items-center" />
-              <span className="pl-2">Sialkot, Pakistan</span>
-            </p>
-            <p className="flex pt-2 text-md font-thin  justify-left items-center">
-              <GoDotFill className=" font-bold text-green-700 flex justify-center items-center" />
-              <span className="pl-2">Available for new projects</span>
-            </p>
-          </div>
           <div className="flex p-5">
             {socialLinks.map((item) => (
               <p className="text-xl font-bold pr-4 hover:text-sky-600">

@@ -31,7 +31,7 @@ const Contact = () => {
     },
   ];
   return (
-    <div className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6 pb-10">
+    <div id="Contact" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6 pb-10">
       <div className="flex justify-center content-center">
         <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
         Get in touch

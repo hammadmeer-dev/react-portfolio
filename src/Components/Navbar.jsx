@@ -10,10 +10,10 @@ function Navbar({handleNightMode,nightMode}) {
     setIsMenu(!isMenu);
   };
   const navItems = [
-    { name: "About", link: "/about" },
-    { name: "Work", link: "/work" },
-    { name: "Testimonial", link: "/testimonial" },
-    { name: "Contact", link: "/contact" },
+    { name: "About", link: "About" },
+    { name: "Work", link: "Work" },
+    { name: "Skill", link: "Skill" },
+    { name: "Contact", link: "Contact" },
   ];
   return (
     <nav className="bg-white dark:bg-gray-900 text-black dark:text-white">
@@ -32,8 +32,9 @@ function Navbar({handleNightMode,nightMode}) {
         <div className=" gap-3 hidden md:flex ">
           <ul className="flex gap-14 md:gap-8 border-r-2 pr-4">
             {navItems.map((item, index) => (
-              <li key={index} className="flex justify-center items-center">
+              <li key={index} className="flex justify-center items-center"><a href={`#${item.link}`}>
                 {item.name}
+                </a>
               </li>
             ))}
           </ul>
