@@ -8,23 +8,23 @@ import hammadm1r from "../assets/hammadm1r.jpeg"
 import { socialLinks } from "../util/constants";
 function Hero(){
     return (
-        <div id="Hero" className="flex flex-wrap justify-between p-2 sm:p-8 lg:h-screen bg-white dark:bg-gray-900 text-black dark:text-white">
+        <div id="Hero" className="flex flex-wrap bg-white justify-between p-2 text-black dark:bg-gray-900 dark:text-white lg:h-screen sm:p-8">
             <div className = "pl-2 w-full md:w-2/3  order-2 md:order-1 mt-8 sm:mt-4">
                 <h2 className="text-4xl font-extrabold">Hi, I'm Hammad</h2>
-                <p className="text-md font-thin text-balance mt-4">I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
+                <p className="text-balance text-md font-thin mt-4">I'm a full stack developer specializing in React.js and Node.js, dedicated to building exceptional digital experiences that are fast, accessible, visually appealing, and responsive. My passion for web development drives me to create innovative and user-friendly applications.</p>
                 <div>
-                <p className="flex pt-4  text-md font-thin justify-left items-center"><IoLocationOutline className=" font-bold flex justify-center items-center"/><span className="pl-2">Sialkot, Pakistan</span></p>
-                <p className="flex pt-2 text-md font-thin  justify-left items-center">< GoDotFill className=" font-bold text-green-700 flex justify-center items-center" /><span className="pl-2">Available for new projects</span></p>
+                <p className="flex justify-left text-md font-thin items-center pt-4"><IoLocationOutline className="flex justify-center font-bold items-center"/><span className="pl-2">Sialkot, Pakistan</span></p>
+                <p className="flex justify-left text-md font-thin items-center pt-2">< GoDotFill className="flex justify-center text-green-700 font-bold items-center" /><span className="pl-2">Available for new projects</span></p>
                 </div>
                 <div className="flex p-5">
                 { 
                 socialLinks.map((item) => 
-                    <p className="text-xl font-bold pr-4 hover:text-sky-600">{item.icon}</p>
+                    <p className="text-xl font-bold hover:text-sky-600 pr-4"><a href={item.link}>{item.icon}</a></p>
                 )   
                 }
                 </div>
             </div>
-            <div className=" w-full md:w-1/3 order-1 md:order-2 ">
+            <div className="order-1 w-full md:order-2 md:w-1/3">
                 <img src={hammadm1r} alt="Hammad Meer"  className="rounded-full"/>
             </div>
         </div>

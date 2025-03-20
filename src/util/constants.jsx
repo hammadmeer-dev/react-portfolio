@@ -18,6 +18,10 @@ import { GoDotFill } from "react-icons/go";
 import { LuFacebook, LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import portfolio from "../assets/portfolio.jpeg";
+import foodie from "../assets/foodie.jpeg";
+import traveler from "../assets/traveler.jpeg";
+
 export const Skill_data = [
   {
     skill_name: "Html 5",
@@ -128,3 +132,57 @@ export const socialLinks = [
       link: "https://pk.linkedin.com/in/hammadm1r",
     },
   ];
+
+  export const projects = [
+    {
+      title: "Personal Portfolio",
+      description: "A personal portfolio website built with React, Tailwind CSS, and Vite.js, showcasing projects and development expertise with a fast and responsive design.",
+      image: portfolio,
+      techStack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Figma",
+        "Cypress",
+        "Storybook",
+        "Git",
+      ],
+      link: "#",
+    },
+    {
+      title: "Foodie",
+      description: "Foodie is a MERN-stack web app for ordering groceries, fast food, and essentials online. It features secure authentication, a responsive UI, and Stripe-powered payments.",
+      image: foodie,
+      techStack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Figma",
+        "Cypress",
+        "Storybook",
+        "Git",
+      ],
+      link: "#",
+    },
+    {
+      title: "Traveler",
+      description: "Traveler is a MERN-stack social platform where users can share travel experiences, follow others, and interact through posts. It features secure authentication, profile management, and an engaging feed.",
+      image: traveler,
+      techStack: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "TailwindCSS",
+        "Figma",
+        "Cypress",
+        "Storybook",
+        "Git",
+      ],
+      link: "#",
+    }
+  ]

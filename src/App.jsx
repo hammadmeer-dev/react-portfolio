@@ -8,6 +8,7 @@ import Aboutme from "./Components/About-Me";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
 function App() {
   const [count, setCount] = useState(0);
   const [nightMode, setNightMode] = useState(false);
@@ -30,6 +31,7 @@ function App() {
       <Hero />
       <Aboutme/>
       <Skills/>
+      <Projects />
       <Contact />
       <Footer/>
     </>
