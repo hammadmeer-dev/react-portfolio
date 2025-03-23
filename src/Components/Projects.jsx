@@ -14,12 +14,14 @@ const ProjectCard = ({ project, index }) => {
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
+      <div className="w-full bg-gray-100 md:w-1/2 rounded-lg ">
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-full md:w-96 md:h-96 rounded-lg"
+        className="w-auto h-auto md:w-auto md:h-auto rounded-lg mx-auto"
       />
-      <div>
+      </div>
+      <div className="w-full md:w-1/2 rounded-lg">
         <h3 className="text-xl font-semibold">{project.title}</h3>
         <p className="text-gray-600 dark:text-gray-300">
           {project.description}
