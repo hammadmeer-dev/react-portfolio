@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       {visible && (
         <div
-        className="bg-slate-300 dark:bg-slate-800 flex justify-center items-center w-12 h-12 bottom-5 right-5 rounded-full fixed text-white shadow-lg cursor-pointer hover:bg-slate-400 dark:hover:bg-slate-700 transition"
+        className="bg-slate-200 dark:bg-slate-800 dark:text-white flex justify-center items-center w-12 h-12 bottom-5 right-5 rounded-full fixed text-black shadow-lg cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-700 transition animate-bounce"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         <FaArrowUp size={20} />

@@ -1,24 +1,17 @@
-import React from "react";
-import { IoLocationOutline } from "react-icons/io5";
-import { GoDotFill } from "react-icons/go";
-import { LuGithub, LuInstagram } from "react-icons/lu";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import hammadm1r from "../assets/hammadm1r.jpeg";
 import { socialLinks, projects } from "../util/constants";
 
 const ProjectCard = ({ project, index }) => {
   return (
     <div
-      className={`flex flex-col  md:flex-row gap-6 p-6 dark:bg-gray-700 text-black dark:text-white bg-white shadow-md rounded-xl ${
+      className={`flex flex-col   md:flex-row gap-6 p-6 dark:bg-gray-700 text-black dark:text-white bg-white shadow-md rounded-xl ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       }`}
     >
-      <div className="w-full bg-gray-100 md:w-1/2 rounded-lg ">
+      <div className="w-full md:w-1/2 rounded-lg  ">
       <img
         src={project.image}
         alt={project.title}
-        className="w-auto h-auto md:w-auto md:h-auto rounded-lg mx-auto"
+        className="w-auto h-auto md:w-96 md:h-96 rounded-lg mx-auto"
       />
       </div>
       <div className="w-full md:w-1/2 rounded-lg">

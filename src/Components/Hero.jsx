@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 import { LuGithub, LuInstagram } from "react-icons/lu";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
-import hammadm1r from "../assets/hammadm1r.jpeg"
+import hammadm1r from "../assets/hammad-meer.jpeg"
 import { socialLinks } from "../util/constants";
 function Hero(){
     return (
