@@ -74,7 +74,7 @@ function Navbar({ handleNightMode, nightMode }) {
                   </li>
                 ))}
               </ul>
-              <h1
+              <h2
                 className="flex justify-center rounded-full items-center mb-6"
                 onClick={handleNightMode}
               >
@@ -83,10 +83,10 @@ function Navbar({ handleNightMode, nightMode }) {
                 ) : (
                   <CiLight className="text-2xl" />
                 )}
-              </h1>
-              <h1 className="flex bg-black justify-center rounded-xl text-md text-white font-semibold items-center px-2 py-1">
+              </h2>
+              <h2 className="flex bg-black justify-center rounded-xl text-md text-white font-semibold items-center px-2 py-1">
                 <a href={resume}>Downlord CV</a>
-              </h1>
+              </h2>
             </div>
           </div>
         </div>

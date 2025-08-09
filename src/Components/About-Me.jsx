@@ -10,9 +10,9 @@ const Aboutme = () => {
     >
       {/* Section Heading */}
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h2 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           About Me
-        </h1>
+        </h2>
       </div>
 
       <div className="flex flex-wrap justify-between p-2 sm:p-8">

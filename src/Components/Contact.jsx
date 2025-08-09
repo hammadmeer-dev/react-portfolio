@@ -24,15 +24,15 @@ const Contact = () => {
       className="bg-white text-black dark:bg-gray-900 dark:text-white pb-10 pt-6"
     >
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 rounded-full text-center text-lg dark:bg-slate-800 font-semibold px-4 py-2">
+        <h2 className="bg-slate-300 rounded-full text-center text-lg dark:bg-slate-800 font-semibold px-4 py-2">
           Get in touch
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center content-center">
-        <h1 className="text-balance text-center text-md font-thin px-4 py-2">
+        <h2 className="text-balance text-center text-md font-thin px-4 py-2">
           What’s next? Feel free to reach out to me if you're looking for a
           developer, have a query, or simply want to connect.
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center items-center">
         <p className="flex justify-left text-md font-thin items-center pt-4">
@@ -64,9 +64,9 @@ const Contact = () => {
         </p>
       )}
       <div className="flex justify-center content-center">
-        <h1 className="text-balance text-center text-md font-thin px-4 py-2">
+        <h2 className="text-balance text-center text-md font-thin px-4 py-2">
           You may also find me on these platforms!
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center content-center">
         {socialLinks.map((item, index) => (

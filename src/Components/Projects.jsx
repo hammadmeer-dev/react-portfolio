@@ -47,14 +47,14 @@ const Projects = () => {
       className="pt-6 bg-white dark:bg-gray-900 text-black dark:text-white"
     >
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h2 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           Projects
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center content-center">
-        <h1 className="text-center px-4 py-2 text-md font-thin text-balance ">
+        <h2 className="text-center px-4 py-2 text-md font-thin text-balance ">
           Some of the noteworthy projects I have built:
-        </h1>
+        </h2>
       </div>
       <div className="w-full lg:w-5/6 flex justify-center items-center mx-auto">
         <div className="grid gap-8 justify-center items-center ">

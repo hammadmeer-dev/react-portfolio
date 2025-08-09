@@ -25,14 +25,14 @@ const Skills = () => {
   return (
     <div id="Skill" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6">
       <div className="flex justify-center content-center">
-        <h1 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h2 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           Skills
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center content-center">
-        <h1 className="text-center px-4 py-2 text-md font-thin text-balance ">
+        <h2 className="text-center px-4 py-2 text-md font-thin text-balance ">
           The skills, tools and technologies I am really good at:
-        </h1>
+        </h2>
       </div>
       <div className="flex justify-center items-center ">
       <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 gap-6 p-4 ">
