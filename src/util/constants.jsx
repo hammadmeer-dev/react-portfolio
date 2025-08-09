@@ -116,81 +116,86 @@ export const Skill_data = [
 ];
 
 export const socialLinks = [
-    {
-      icon: <LuGithub />,
-      link: "https://github.com/hammadm1r",
-    },{
-      icon: <LuFacebook/>,
-      link:"https://www.facebook.com/hammad.mir.338?mibextid=ZbWKwL"
-    },
-    {
-      icon: <FaLinkedinIn />,
-      link: "https://pk.linkedin.com/in/hammadm1r",
-    },
-    {
-      icon: <FaInstagram />,
-      link: "https://pk.linkedin.com/in/hammadm1r",
-    },
-  ];
+  {
+    icon: <LuGithub />,
+    link: "https://github.com/hammadmeer-dev",
+  },
+  {
+    icon: <LuFacebook />,
+    link: "https://www.facebook.com/hammad.mir.338?mibextid=ZbWKwL",
+  },
+  {
+    icon: <FaLinkedinIn />,
+    link: "https://pk.linkedin.com/in/hammad-meer-dev",
+  },
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/hammadmeer_dev/",
+  },
+];
+
 
   export const projects = [
-    {
-      title: "Personal Portfolio",
-      description: "A personal portfolio website built with React, Tailwind CSS, and Vite.js, showcasing projects and development expertise with a fast and responsive design.",
-      image: portfolio,
-      techStack: [
-        "React.js",
-        "React Icons",
-        "Vite",
-        "TailwindCSS",
-        "Figma",
-        "Git",
-      ],
-      link: "#",
-    },
-    {
-      title: "Foodie",
-      description: "Foodie is a MERN-stack web app for ordering groceries, fast food, and essentials online. It features secure authentication, a responsive UI, and Stripe-powered payments.",
-      image: foodie,
-      techStack: [
-        "React",
-        "Redux Toolkit",
-        "Node Js",
-        "Express",
-        "Stripe",
-        "Mongo DB",
-        "Cloudinary",
-        "Vite",
-        "Axios",
-        "Multer",
-        "React Icons",
-        "TailwindCSS",
-        "SweetAlert2",
-        "JWT",
-        "Git",
-      ],
-      link: "https://github.com/hammadm1r/Foodie-App",
-    },
-    {
-      title: "Traveler",
-      description: "Traveler is a MERN-stack social platform where users can share travel experiences, follow others, and interact through posts. It features secure authentication, profile management, and an engaging feed.",
-      image: traveler,
-      techStack: [
-        "React",
-        "Redux Toolkit",
-        "Node Js",
-        "Express",
-        "Cloudinary",
-        "Mongo DB",
-        "Vite",
-        "Axios",
-        "Multer",
-        "React Icons",
-        "TailwindCSS",
-        "SweetAlert2",
-        "JWT",
-        "Git"
-      ],
-      link: "https://github.com/hammadm1r/traveler_client",
-    }
-  ]
+  {
+    title: "Hammad Meer Personal Portfolio",
+    description:
+      "A fast, responsive personal portfolio website by Hammad Meer (hammad meer dev), built with React.js, Tailwind CSS, and Vite.js. Showcases full-stack development skills, featured projects, and professional experience in an SEO-friendly design.",
+    image: portfolio,
+    techStack: [
+      "React.js",
+      "React Icons",
+      "Vite.js",
+      "TailwindCSS",
+      "Figma",
+      "Git",
+    ],
+    link: "#",
+  },
+  {
+    title: "Traveler — MERN Stack Social Platform",
+    description:
+      "Traveler is a MERN stack social networking platform by Hammad Meer (hammad meer dev) where users share travel experiences, follow others, and engage with posts. Features secure JWT authentication, profile management, and an interactive feed, optimized for performance and scalability.",
+    image: traveler,
+    techStack: [
+      "React.js",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "Cloudinary",
+      "MongoDB",
+      "Vite.js",
+      "Axios",
+      "Multer",
+      "React Icons",
+      "TailwindCSS",
+      "SweetAlert2",
+      "JWT",
+      "Git",
+    ],
+    link: "https://truetraveler.netlify.app",
+  },
+  {
+    title: "Foodie — MERN Stack E-Commerce App",
+    description:
+      "Foodie is a MERN stack e-commerce web application by Hammad Meer (hammad meer dev) for ordering groceries, fast food, and essentials online. Includes secure JWT authentication, responsive UI with Tailwind CSS, and Stripe-powered payment integration.",
+    image: foodie,
+    techStack: [
+      "React.js",
+      "Redux Toolkit",
+      "Node.js",
+      "Express.js",
+      "Stripe",
+      "MongoDB",
+      "Cloudinary",
+      "Vite.js",
+      "Axios",
+      "Multer",
+      "React Icons",
+      "TailwindCSS",
+      "SweetAlert2",
+      "JWT",
+      "Git",
+    ],
+    link: "https://github.com/hammadm1r/Foodie-App",
+  },
+];

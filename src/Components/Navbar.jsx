@@ -32,7 +32,7 @@ function Navbar({ handleNightMode, nightMode }) {
         <div className="gap-3 hidden md:flex">
           <ul className="flex border-r-2 gap-14 md:gap-8 pr-4">
             {navItems.map((item, index) => (
-              <li key={index} className="flex justify-center items-center">
+              <li key={index} className="flex justify-center items-center hover:text-sky-600 ">
                 <a href={`#${item.link}`}>{item.name}</a>
               </li>
             ))}
@@ -42,7 +42,7 @@ function Navbar({ handleNightMode, nightMode }) {
             onClick={handleNightMode}
           >
             {nightMode ? (
-              <CiDark className="text-2xl" />
+              <CiDark className="text-2xl " />
             ) : (
               <CiLight className="text-2xl" />
             )}
