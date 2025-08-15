@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CiLight } from "react-icons/ci";
 import { CiDark } from "react-icons/ci";
-import resume from "../assets/hammadm1r.pdf";
+import resume from "../assets/Hammad_Farooq_Meer.pdf";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 function Navbar({ handleNightMode, nightMode }) {
