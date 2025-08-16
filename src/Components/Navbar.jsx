@@ -4,6 +4,8 @@ import { CiDark } from "react-icons/ci";
 import resume from "../assets/Hammad_Farooq_Meer.pdf";
 import { IoIosMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
+import logo from "../assets/logo.svg";
+import HeaderLogo from "./Logo";
 function Navbar({ handleNightMode, nightMode }) {
   const [isMenu, setIsMenu] = useState(false);
   const handleMenu = (e) => {
@@ -20,6 +22,7 @@ function Navbar({ handleNightMode, nightMode }) {
       <div className="flex justify-between p-2 sm:p-8">
         <div className="w-1/2 md:w-1/3">
           <h1 className="flex text-left text-lg font-bold items-center pl-2">
+            <HeaderLogo logo={logo}/>
             Hammad Meer
           </h1>
         </div>
@@ -32,7 +35,10 @@ function Navbar({ handleNightMode, nightMode }) {
         <div className="gap-3 hidden md:flex">
           <ul className="flex border-r-2 gap-14 md:gap-8 pr-4">
             {navItems.map((item, index) => (
-              <li key={index} className="flex justify-center items-center hover:text-sky-600 ">
+              <li
+                key={index}
+                className="flex justify-center items-center hover:text-sky-600 "
+              >
                 <a href={`#${item.link}`}>{item.name}</a>
               </li>
             ))}

@@ -65,7 +65,8 @@ const Aboutme = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl font-bold pr-4 hover:text-sky-600"
+                className="text-xl font-bold pr-4 hover:text-sky-600 animate-float"
+      style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
               >
                 {item.icon}
                 <span className="sr-only">

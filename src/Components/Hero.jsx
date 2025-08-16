@@ -37,7 +37,8 @@ function Hero() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl font-bold hover:text-sky-600 pr-4"
+              className="text-xl font-bold hover:text-sky-600 pr-4 animate-float"
+      style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
             >
               {item.icon}
               <span className="sr-only">
