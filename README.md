@@ -1,12 +1,71 @@
-# React + Vite
+# 🚀 React Portfolio — Hammad Meer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fast, and fully responsive **developer portfolio** built with **React**, **Vite**, and **Tailwind CSS**, featuring smooth animations and SEO optimization.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://hammadmeer.netlify.app/  
+📦 **Repository:** https://github.com/hammadmeer-dev/react-portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ Super Fast (Powered by Vite)
+- 🎨 Modern UI with Tailwind CSS  
+- ✨ Smooth Animations  
+- 📱 Fully Responsive Design  
+- 🔍 SEO Optimized  
+- 🧩 Clean & Modular Code Structure  
+- 📬 Contact Section  
+- 🌙 Light/Dark Mode Ready (optional)
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|-----------|---------|
+| **React JS** | Frontend UI |
+| **Vite** | Build & Dev Server |
+| **Tailwind CSS** | Styling |
+| **Framer Motion / AOS** | Animations |
+| **React Icons** | Icons |
+| **SEO Meta Tags** | Search Optimization |
+
+---
+
+## 📂 Project Structure
+
+react-portfolio/
+│── public/
+│── src/
+│ ├── components/
+│ ├── pages/
+│ ├── assets/
+│ ├── hooks/
+│ ├── data/
+│ ├── App.jsx
+│ └── main.jsx
+│── index.html
+│── package.json
+│── tailwind.config.js
+│── vite.config.js 
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone the repository
+```bash
+git clone https://github.com/hammadmeer-dev/react-portfolio.git
+//Navigate into the folder
+cd react-portfolio
+//Install dependencies
+npm install
+//Run development server
+npm run dev
+//Build for production
+npm run build
+//Preview production build
+npm run preview
