@@ -6,7 +6,7 @@ const Aboutme = () => {
   return (
     <div
       id="About"
-      className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6"
+      className="bg-slate-50 dark:bg-gray-900 text-slate-900 dark:text-white pt-6 transition-colors duration-300"
     >
       {/* Section Heading */}
       <div className="flex justify-center content-center">
@@ -66,17 +66,17 @@ const Aboutme = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl font-bold pr-4 hover:text-sky-600 animate-float"
-      style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
+                style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
               >
                 {item.icon}
                 <span className="sr-only">
                   {item.link.includes("linkedin")
                     ? "LinkedIn profile of Hammad Meer"
                     : item.link.includes("github")
-                    ? "GitHub profile of Hammad Meer"
-                    : item.link.includes("facebook")
-                    ? "Facebook profile of Hammad Meer"
-                    : "Instagram profile of Hammad Meer"}
+                      ? "GitHub profile of Hammad Meer"
+                      : item.link.includes("facebook")
+                        ? "Facebook profile of Hammad Meer"
+                        : "Instagram profile of Hammad Meer"}
                 </span>
               </a>
             ))}

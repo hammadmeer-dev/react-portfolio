@@ -21,10 +21,10 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="bg-white text-black dark:bg-gray-900 dark:text-white pb-10 pt-6"
+      className="bg-slate-50 text-slate-900 dark:bg-gray-900 dark:text-white pb-10 pt-6 transition-colors duration-300"
     >
       <div className="flex justify-center content-center">
-        <h2 className="bg-slate-300 rounded-full text-center text-lg dark:bg-slate-800 font-semibold px-4 py-2">
+        <h2 className="bg-slate-200 rounded-full text-center text-lg dark:bg-slate-800 font-semibold px-4 py-2">
           Get in touch
         </h2>
       </div>
@@ -83,10 +83,10 @@ const Contact = () => {
               {item.link.includes("linkedin")
                 ? "LinkedIn"
                 : item.link.includes("github")
-                ? "GitHub"
-                : item.link.includes("facebook")
-                ? "Facebook"
-                : "Instagram"}{" "}
+                  ? "GitHub"
+                  : item.link.includes("facebook")
+                    ? "Facebook"
+                    : "Instagram"}{" "}
               profile
             </span>
           </a>

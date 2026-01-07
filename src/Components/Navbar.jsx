@@ -6,11 +6,29 @@ import { IoIosMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import logo from "../assets/logo.svg";
 import HeaderLogo from "./Logo";
+import { useNavigate, useLocation } from "react-router-dom";
+
 function Navbar({ handleNightMode, nightMode }) {
   const [isMenu, setIsMenu] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const handleMenu = (e) => {
     setIsMenu(!isMenu);
   };
+
+  const handleNavClick = (id) => {
+    setIsMenu(false);
+    if (location.pathname === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/", { state: { targetId: id } });
+    }
+  };
+
   const navItems = [
     { name: "About", link: "About" },
     { name: "Skill", link: "Skill" },
@@ -18,11 +36,11 @@ function Navbar({ handleNightMode, nightMode }) {
     { name: "Contact", link: "Contact" },
   ];
   return (
-    <nav className="bg-white text-black dark:bg-gray-900 dark:text-white">
-      <div className="flex justify-between p-2 sm:p-8">
+    <nav className="bg-slate-50 text-slate-900 dark:bg-gray-900 dark:text-white sticky top-0 z-50 shadow-sm/50 backdrop-blur-md bg-opacity-90 transition-colors duration-300">
+      <div className="flex justify-between p-2 sm:p-8 items-center">
         <div className="w-1/2 md:w-1/3">
           <h1 className="flex text-left text-lg font-bold items-center pl-2">
-            <HeaderLogo logo={logo}/>
+            <HeaderLogo logo={logo} />
             Hammad Meer
           </h1>
         </div>
@@ -37,9 +55,10 @@ function Navbar({ handleNightMode, nightMode }) {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="flex justify-center items-center hover:text-sky-600 "
+                className="flex justify-center items-center hover:text-sky-600 cursor-pointer"
+                onClick={() => handleNavClick(item.link)}
               >
-                <a href={`#${item.link}`}>{item.name}</a>
+                {item.name}
               </li>
             ))}
           </ul>
@@ -59,7 +78,7 @@ function Navbar({ handleNightMode, nightMode }) {
         </div>
       </div>
       {isMenu ? (
-        <div className="bg-white text-black w-full dark:bg-gray-900 dark:text-white fixed inset-0 md:hidden">
+        <div className="bg-slate-50 text-slate-900 w-full dark:bg-gray-900 dark:text-white fixed inset-0 md:hidden z-50">
           <div className="justify-right text-right items-right">
             <button
               className="justify-end p-8 text-2xl text-right"
@@ -74,9 +93,10 @@ function Navbar({ handleNightMode, nightMode }) {
                 {navItems.map((item, index) => (
                   <li
                     key={index}
-                    className="flex justify-center items-center mb-6"
+                    className="flex justify-center items-center mb-6 cursor-pointer hover:text-sky-600"
+                    onClick={() => handleNavClick(item.link)}
                   >
-                    <a href={`#${item.link}`}>{item.name}</a>
+                    {item.name}
                   </li>
                 ))}
               </ul>

@@ -23,9 +23,9 @@ const Skills = () => {
     },
   ];
   return (
-    <div id="Skill" className="bg-white dark:bg-gray-900 text-black dark:text-white pt-6">
+    <div id="Skill" className="bg-slate-50 dark:bg-gray-900 text-slate-900 dark:text-white pt-6 transition-colors duration-300">
       <div className="flex justify-center content-center">
-        <h2 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h2 className="bg-slate-200 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           Skills
         </h2>
       </div>
@@ -35,8 +35,8 @@ const Skills = () => {
         </h2>
       </div>
       <div className="flex justify-center items-center ">
-      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 gap-6 p-4 ">
-        {Skill_data.map((skill) => (
+        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 gap-6 p-4 ">
+          {Skill_data.map((skill) => (
             <img
               src={skill.Image}
               height={skill.height}
@@ -44,8 +44,8 @@ const Skills = () => {
               alt={skill.skill_name}
               className="w-20 h-20 sm:w-24 sm:h-24 object-contain transition-transform duration-300 hover:scale-125"
             />
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </div>
   );

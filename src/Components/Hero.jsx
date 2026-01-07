@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div
       id="Hero"
-      className="flex flex-wrap bg-white justify-between p-2 text-black dark:bg-gray-900 dark:text-white lg:h-screen sm:p-8"
+      className="flex flex-wrap bg-slate-50 justify-between p-2 text-slate-900 dark:bg-gray-900 dark:text-white lg:h-screen sm:p-8 pt-20 transition-colors duration-300"
     >
       <div className="pl-2 w-full md:w-2/3  order-2 md:order-1 mt-8 sm:mt-4">
         <h2 className="text-4xl font-extrabold">Hi, I’m <span className="text-green-600 dark:text-sky-600">Hammad Meer</span> — Full-Stack Web Developer | MERN Stack Specialist</h2>
@@ -38,17 +38,17 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl font-bold hover:text-sky-600 pr-4 animate-float"
-      style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
+              style={{ animationDelay: `${index * 0.3}s` }} // stagger effect
             >
               {item.icon}
               <span className="sr-only">
                 {item.link.includes("linkedin")
                   ? "LinkedIn profile of Hammad Meer"
                   : item.link.includes("github")
-                  ? "GitHub profile of Hammad Meer"
-                  : item.link.includes("facebook")
-                  ? "Facebook profile of Hammad Meer"
-                  : "Instagram profile of Hammad Meer"}
+                    ? "GitHub profile of Hammad Meer"
+                    : item.link.includes("facebook")
+                      ? "Facebook profile of Hammad Meer"
+                      : "Instagram profile of Hammad Meer"}
               </span>
             </a>
           ))}

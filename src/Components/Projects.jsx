@@ -3,27 +3,26 @@ import { socialLinks, projects } from "../util/constants";
 const ProjectCard = ({ project, index }) => {
   return (
     <div
-      className={`flex flex-col   md:flex-row gap-6 p-6 dark:bg-gray-700 text-black dark:text-white bg-white shadow-md rounded-xl ${
-        index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-      }`}
+      className={`flex flex-col   md:flex-row gap-6 p-6 dark:bg-gray-700 text-slate-900 dark:text-white bg-white shadow-lg rounded-xl ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+        }`}
     >
       <div className="w-full md:w-1/2 rounded-lg  ">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-auto h-auto md:w-96 md:h-96 rounded-lg mx-auto"
-      />
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-auto h-auto md:w-96 md:h-96 rounded-lg mx-auto"
+        />
       </div>
       <div className="w-full md:w-1/2 rounded-lg">
         <h3 className="text-xl font-semibold">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-slate-600 dark:text-gray-300">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2 mt-2">
           {project.techStack.map((tech, i) => (
             <span
               key={i}
-              className="bg-gray-200 dark:bg-gray-900 text-black dark:text-white px-3 py-1 rounded-full text-sm"
+              className="bg-slate-100 dark:bg-gray-900 text-slate-700 dark:text-white px-3 py-1 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
@@ -44,10 +43,10 @@ const Projects = () => {
   return (
     <section
       id="Project"
-      className="pt-6 bg-white dark:bg-gray-900 text-black dark:text-white"
+      className="pt-6 bg-slate-50 dark:bg-gray-900 text-slate-900 dark:text-white transition-colors duration-300"
     >
       <div className="flex justify-center content-center">
-        <h2 className="bg-slate-300 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
+        <h2 className="bg-slate-200 dark:bg-slate-800 text-center px-4 py-2 rounded-full text-lg font-semibold">
           Projects
         </h2>
       </div>
