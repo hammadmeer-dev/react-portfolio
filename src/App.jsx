@@ -4,6 +4,9 @@ import Home from "./Components/Home";
 import ExperienceDetail from "./Components/ExperienceDetail";
 import "./App.css";
 
+import SEO from "./Components/SEO/SEO";
+import SchemaMarkup from "./Components/SEO/SchemaMarkup";
+
 function App() {
   const [nightMode, setNightMode] = useState(true);
 
@@ -22,6 +25,8 @@ function App() {
   }
   return (
     <Router>
+      <SEO />
+      <SchemaMarkup />
       <Routes>
         <Route path="/" element={<Home handleNightMode={handleNightMode} nightMode={nightMode} />} />
         <Route path="/experience/:id" element={<ExperienceDetail handleNightMode={handleNightMode} nightMode={nightMode} />} />

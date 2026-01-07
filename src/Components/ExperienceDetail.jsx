@@ -15,14 +15,11 @@ const ExperienceDetail = ({ handleNightMode, nightMode }) => {
 
     if (!experience) {
         return (
-            <div className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white flex flex-col items-center justify-center transition-colors duration-300">
-                <h2 className="text-3xl font-bold mb-4">Experience Not Found</h2>
-                <button
-                    onClick={() => navigate("/")}
-                    className="bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700 text-white transition"
-                >
-                    Go Home
-                </button>
+            <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-gray-900 transition-colors duration-300">
+                <div className="text-center">
+                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Experience Not Found</h2>
+                    <button onClick={() => navigate('/')} className="text-blue-600 hover:text-blue-800 dark:text-blue-400">Return Home</button>
+                </div>
             </div>
         );
     }
@@ -33,10 +30,12 @@ const ExperienceDetail = ({ handleNightMode, nightMode }) => {
     return (
         <>
             <Navbar handleNightMode={handleNightMode} nightMode={nightMode} />
-            <Helmet>
-                <title>{`${title} at ${company} - Portfolio`}</title>
-                <meta name="description" content={`Read about my experience as a ${title} at ${company}.`} />
-            </Helmet>
+            <SEO
+                title={`${title} at ${company}`}
+                description={`Explore Hammad Meer's experience as a ${title} at ${company}. ${detailedDescription.substring(0, 150)}...`}
+                keywords={`Hammad Meer, ${title}, ${company}, ${location}, Software Engineer Experience`}
+                url={`https://hammadmeer.netlify.app/experience/${id}`}
+            />
 
             <div className="min-h-screen bg-slate-50 dark:bg-gray-900 py-16 px-4 text-slate-900 dark:text-gray-100 transition-colors duration-300">
                 <div className="max-w-4xl mx-auto pt-16">

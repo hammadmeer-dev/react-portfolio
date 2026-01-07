@@ -36,7 +36,7 @@ function Navbar({ handleNightMode, nightMode }) {
     { name: "Contact", link: "Contact" },
   ];
   return (
-    <nav className="bg-slate-50 text-slate-900 dark:bg-gray-900 dark:text-white sticky top-0 z-50 shadow-sm/50 backdrop-blur-md bg-opacity-90 transition-colors duration-300">
+    <nav className="bg-slate-50 text-slate-900 dark:bg-gray-900 dark:text-white sticky top-0 z-50 shadow-sm/50 transition-colors duration-300 w-full">
       <div className="flex justify-between p-2 sm:p-8 items-center">
         <div className="w-1/2 md:w-1/3">
           <h1 className="flex text-left text-lg font-bold items-center pl-2">
