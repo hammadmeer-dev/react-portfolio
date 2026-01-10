@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import ExperienceDetail from "./Components/ExperienceDetail";
+import ScrollToTop from "./Components/ScrollToTop";
 import "./App.css";
 
 import SEO from "./Components/SEO/SEO";
@@ -25,6 +26,7 @@ function App() {
   }
   return (
     <Router>
+      <ScrollToTop />
       <SEO />
       <SchemaMarkup />
       <Routes>

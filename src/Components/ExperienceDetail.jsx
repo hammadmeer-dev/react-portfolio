@@ -7,6 +7,7 @@ import { experienceData } from "../data/experienceData";
 import { calculateDuration, formatDate } from "../utils/dateUtils";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import SEO from "./SEO/SEO";
 
 const ExperienceDetail = ({ handleNightMode, nightMode }) => {
     const { id } = useParams();
@@ -29,14 +30,13 @@ const ExperienceDetail = ({ handleNightMode, nightMode }) => {
 
     return (
         <>
-            <Navbar handleNightMode={handleNightMode} nightMode={nightMode} />
             <SEO
                 title={`${title} at ${company}`}
                 description={`Explore Hammad Meer's experience as a ${title} at ${company}. ${detailedDescription.substring(0, 150)}...`}
                 keywords={`Hammad Meer, ${title}, ${company}, ${location}, Software Engineer Experience`}
                 url={`https://hammadmeer.netlify.app/experience/${id}`}
             />
-
+            <Navbar handleNightMode={handleNightMode} nightMode={nightMode} />
             <div className="min-h-screen bg-slate-50 dark:bg-gray-900 py-16 px-4 text-slate-900 dark:text-gray-100 transition-colors duration-300">
                 <div className="max-w-4xl mx-auto pt-16">
                     <Link to="/" className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 mb-8 transition font-medium">
